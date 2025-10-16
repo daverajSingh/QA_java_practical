@@ -17,6 +17,7 @@ public class Main {
         LambdaChallenges.taskA();
         LambdaChallenges.taskB();
         LambdaChallenges.taskC();
+        LambdaChallenges.taskD();
     }
 
     public static void exampleA(){

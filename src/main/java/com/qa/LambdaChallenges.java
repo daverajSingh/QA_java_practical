@@ -2,6 +2,8 @@ package com.qa;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.function.Predicate;
 
 public class LambdaChallenges {
 
@@ -59,4 +61,26 @@ public class LambdaChallenges {
 //        6. Invoke the 'filter' method of helloOptional passing in the new predicate object and
 //        assign the result to an optional string called 'heyOptional'
 //        7. Print your heyOptional to the console
+    public static void taskD(){
+        // 1
+        Optional<String> helloOptional = Optional.of("Hello and welcome to Challenge 4");
+
+        // 2
+        Predicate<String> welcomePredicate = str -> str.contains("welcome");
+
+        // 3
+        Optional<String> welcomeOptional = helloOptional.filter(welcomePredicate);
+
+        // 4
+        System.out.println(welcomeOptional);
+
+        // 5
+        Predicate<String> heyPredicate = str -> str.contains("hey");
+
+        // 6
+        Optional<String> heyOptional = helloOptional.filter(heyPredicate);
+
+        // 7
+        System.out.println(heyOptional);
+    }
 }

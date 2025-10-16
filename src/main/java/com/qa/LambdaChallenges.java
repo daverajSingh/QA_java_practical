@@ -39,6 +39,12 @@ public class LambdaChallenges {
 //        to add 2 parameters, x and y
 //        4. Invoke the 'add' method passing in any ints to test the addable functionality
 //        5. Print your results to the console
+    public static void taskC() {
+        Addable addCalculator = (num1, num2) -> {
+            return num1 + num2;
+        };
+        System.out.println(addCalculator.add(2,3));
+    }
 
 //  ToDo D
 //        1. Create an Optional<String> called helloOptional with the value of

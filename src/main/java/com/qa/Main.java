@@ -15,7 +15,7 @@ public class Main {
 //        exampleD();
 //        exampleE();
         LambdaChallenges.taskA();
-
+        LambdaChallenges.taskB();
     }
 
     public static void exampleA(){

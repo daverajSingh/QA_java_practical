@@ -23,7 +23,15 @@ public class LambdaChallenges {
 //        4. Print the modified 'colours' list
 //        5. Using the replaceAll method and a lambda function, convert the strings to UPPERCASE
 //        6. Print the modified 'colours' list
+    public static void taskB() {
+        List<String> colours = new ArrayList<>(List.of("Red","Yellow","Pink","GREEN"));
+        System.out.println(colours);
+        colours.replaceAll(colour -> colour.toLowerCase());
+        System.out.println(colours);
+        colours.replaceAll(colour -> colour.toUpperCase());
+        System.out.println(colours);
 
+    }
 // ToDo C
 //        1. Create a Functional Interface called 'Addable'
 //        2. Define a single method 'add' within the interface that accepts two ints and returns an int

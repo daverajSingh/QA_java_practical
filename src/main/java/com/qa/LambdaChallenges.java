@@ -1,5 +1,8 @@
 package com.qa;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LambdaChallenges {
 
 // ToDo A
@@ -7,7 +10,12 @@ public class LambdaChallenges {
 //        2. Print intList
 //        3. Using the replaceAll method and a lambda function, add one to each value
 //        4. Print the modified intList
-
+    public static void taskA() {
+        List<Integer> intList = new ArrayList<>(List.of(1, 2, 3, 4, 5));
+        System.out.println(intList);
+        intList.replaceAll(n -> n+1);
+        System.out.println(intList);
+    }
 // ToDo B
 //        1. Create a list of Strings called 'colours' with values of "Red", "Yellow", "Pink", "GREEN"
 //        2. Print the 'colours' list

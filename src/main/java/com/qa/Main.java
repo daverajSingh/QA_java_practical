@@ -14,6 +14,7 @@ public class Main {
 //        exampleC();
 //        exampleD();
 //        exampleE();
+        LambdaChallenges.taskA();
 
     }
 
